@@ -19,7 +19,7 @@ header {
 .header-section {
   margin-top: 10%;
   height: 50vh;
-  background-image: url("./Img/Headerfront-page.jpg");
+  background-image: url("../Img/Headerfront-page.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
@@ -290,7 +290,7 @@ polygon {
 
 .desprenoi {
   height: 80vh;
-  background-image: url("./Img/About.jpg");
+  background-image: url("../Img/About.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
