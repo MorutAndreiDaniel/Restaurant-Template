@@ -1,0 +1,44 @@
+.products-section {
+    background-color: #FA6163;
+    position: relative;
+
+    &__box:hover {
+        cursor: pointer;
+        background-color: #FC9C9E;
+    }
+    &__box:not(:first-of-type):before {
+        content: '';
+        width: 50%;
+        height: 2px;
+        background-color: #fff;
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        top:0;
+
+        @media screen and(min-width: 768px) {
+            width: 2px;
+            height: 50%;
+            left: 0;
+            margin: 0;
+            transform: translateY(50%);
+        }
+    }
+    &__box--icon {
+        font-size: 2.5em;
+        position: relative;
+        z-index: 3;
+    }
+    &__box--icon:before{
+        content: '';
+        position: absolute;
+        border-radius: 50%;
+        width: 1.5em;
+        height: 1.5em;
+        color: #fff;
+        background-color: #fff;
+        transform: translateX(-15%);
+        z-index: -10;
+    }
+}
+

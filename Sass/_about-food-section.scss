@@ -1,0 +1,58 @@
+$primary-blue : #2E548A;
+$primary-red : #FA6163;
+
+.about-food {
+    margin-top: 5%;
+    
+    &__content {
+        background-color: #fff;
+        transform: translatey(15%);
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        z-index: 10;
+        h4 {
+            color: $primary-red;
+        }
+        h2 {
+            color: $primary-blue;
+        }
+        p {
+            color: $primary-blue;
+            opacity: 0.8;
+        }
+        .main--btn {
+            @media screen and(min-width: 768px) {
+                width: 35%;
+            }
+        }
+        @media screen and(min-width: 768px) {
+            transform: translateY(25%);   
+        }
+        @media screen and(min-width: 996px) {
+            position: absolute;
+            width: 50%;
+            transform: translateY(0%);
+        }
+        @media screen and(min-width: 1200px) {
+             
+         }
+    }
+    img {
+        @media screen and(min-width: 996px) {
+            position: relative;
+            width: 80%;
+        }
+    }
+    &__img {
+        @media screen and(min-width: 996px) {
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+    @media screen and(min-width: 996px) {
+        display: flex;
+        align-items: center;
+    }
+   
+}

@@ -1,0 +1,4 @@
+primary-blue:  #2E548A
+primary-red:  #FA6163
+background-color: #F6EDCB;
+h1: font-size: 2.5em;

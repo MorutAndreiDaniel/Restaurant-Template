@@ -1,0 +1,139 @@
+$primary-blue : #2E548A;
+$primary-red : #FA6163;
+
+.menu-header {
+    @media screen and(min-width: 768px) {
+        margin-top: 5%;
+    }
+}
+.menu-text {
+    h2 {
+        color: $primary-red;
+        font-size: 2.5em;
+        font-weight: 600;
+        text-align: center;
+        padding: 0.5em 0em;
+    }
+    p {
+        color: $primary-blue;
+        opacity: 0.8;
+        text-align: justify;
+        padding: 0.5em 2em;
+        text-indent: 0.5em;
+    }
+}
+.menu-img {
+    img {
+        border-radius: 25px;
+    }
+}
+.menu {
+    &-products {
+        margin-top: 2em;
+        a {
+            text-decoration: none;
+        }
+    }
+    &-hr {
+        width: 70%;
+        border: 2px solid $primary-blue;
+        opacity: 0.5;
+    }
+    @media screen and(min-width: 768px) {
+        margin-top: 5%;
+    }
+}
+.menu {
+
+    &__box {
+        padding-right: 0;
+        padding-left: 0;
+        padding-top: 0;
+        border: 2px solid $primary-blue;
+    
+        &--title {
+            padding: 1.5em 0.5em 0.5em 0.5em;
+
+            h5 {
+                font-size: 1.2em;
+                font-weight: 600;
+            }
+            h6 {
+                font-weight: 500;
+            }
+        }
+        &--text {
+            color: $primary-blue;
+            opacity: 0.8;
+            padding: 0em 1em;
+            display: none;
+        }
+    }
+    .row {
+        @media screen and(min-width: 768px) {
+            margin: 1.5em 0em 2em 0em;
+            display: flex;
+            justify-content: space-between;
+        }
+        :nth-child(3), :nth-child(4) {
+            @media screen and(min-width: 768px) {
+                margin-top: 5%;
+            }
+            
+        }
+         
+        @media screen and(min-width: 996px) {
+            justify-content: space-around;
+            flex-flow: row wrap;
+            break{
+                flex-basis: 100%;
+                width: 0px; 
+                height: 0px; 
+                overflow: hidden;
+              }
+        }
+        :nth-child(4) {
+            @media screen and(min-width: 996px) {
+                margin-top: 5%;
+            }
+        }
+        
+    }   
+}
+.menu__box:not(:first-of-type) {
+    margin-top: 5%;
+    @media screen and(min-width: 768px) {
+        margin-top :5%;
+    }
+}
+.menu__box:first-of-type {
+    @media screen and(min-width: 768px) {
+        margin-top: 5%;
+    }
+}
+.menu__box:hover {
+    cursor: pointer;
+    border: 2px solid $primary-red;
+}
+.product-name-color {
+    color: $primary-blue;  
+}
+.product-price-color {
+    color: $primary-red;
+}
+
+/*Asian Menu*/
+.menu-asian {
+    display: none;
+}
+/*Pasta Menu*/
+.menu-pasta {
+    display: none;
+}
+/*Salads Menu*/
+.menu-salads {
+    display: none;
+}
+.active {
+    color: $primary-red;
+}

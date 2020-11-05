@@ -1,0 +1,45 @@
+$primary-blue : #2E548A;
+$primary-red : #FA6163;
+
+.servicii {
+    background-color: #F6EDCB;
+
+    h1 {
+        margin-top: 10%;
+        font-size: 2.5em;
+    }
+    h1,h5 {
+        color: $primary-blue;
+    }
+}
+.servicii-boxes {
+    margin-top: 5%;
+    &__box {
+        &--icon {
+            font-size: 3em;
+        }
+        &--content {
+            h3 {
+                color: $primary-blue;
+            }
+            .line {
+                width: 40%; 
+                font-size: 1em;
+                border: 1px solid red;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            p {
+                color: $primary-blue;
+                opacity: 0.8;
+
+                @media screen and(min-width: 576px) {
+                    padding: 0.5em auto;
+                }
+                @media screen and(min-width: 1200px) {
+                    padding: 1.2em auto;
+                }
+            }
+        }
+    }
+}

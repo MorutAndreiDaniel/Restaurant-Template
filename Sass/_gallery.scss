@@ -1,0 +1,132 @@
+$primary-blue : #2E548A;
+$primary-red : #FA6163;
+
+.gallery {
+    margin-top: 10%;
+
+    &-section{
+    
+        &__first {
+            &-content {
+                h1 {
+                    color: $primary-blue;
+                    font-size: 2.5em;
+                }
+                p {
+                    color: $primary-blue;
+                    opacity: 0.8;
+                    @media screen and(min-width: 768px) {
+                      width: 70%;
+                      margin-left: auto;
+                      margin-right: auto;
+                    }
+                }
+            }
+        } 
+        &__second {
+          @media screen and(min-width: 576px) {
+            img {
+              width: 100vw;
+            }
+          }
+          @media screen and(min-width: 996px) {
+            display: flex;
+          }
+          &--img2 {
+            @media screen and(min-width: 996px) {
+              align-self: center;
+            }
+          }
+         &--img4 {
+          @media screen and(min-width: 996px) {
+            align-self: center;
+          }
+         }
+        }       
+    }
+}
+
+/* Arrow & Hover Animation */
+.svg-content {
+    margin-top: 5%;
+}
+#more-arrows {
+    width: 75px;
+    height: 65px;
+  
+  &:hover {
+      cursor: pointer;
+    
+    polygon {
+      fill: $primary-red;
+      transition: all .2s ease-out;
+
+      &.arrow-bottom {
+        transform: translateY(-18px);
+      }
+
+      &.arrow-top {
+        transform: translateY(18px);
+      }
+      
+    }
+  
+  }
+  
+}
+
+polygon {
+  fill: $primary-red;
+  transition: all .2s ease-out;
+    
+  &.arrow-middle {
+	  opacity: 0.75;
+	}
+
+	&.arrow-top {
+	  opacity: 0.5
+	}
+	 
+}
+
+/*Close gallery*/
+#close-gallery {
+    width: 75px;
+    height: 65px;
+    transform: rotate(180deg);
+  
+  &:hover {
+      cursor: pointer;
+    
+    polygon {
+      fill: $primary-red;
+      transition: all .2s ease-out;
+
+      &.arrow-bottom {
+        transform: translateY(-18px);
+      }
+
+      &.arrow-top {
+        transform: translateY(18px);
+      }
+      
+    }
+  
+  }
+  
+}
+
+polygon {
+  fill: $primary-red;
+  transition: all .2s ease-out;
+    
+  &.arrow-middle {
+	  opacity: 0.75;
+	}
+
+	&.arrow-top {
+	  opacity: 0.5
+	}
+	 
+}
+  

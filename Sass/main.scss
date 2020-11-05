@@ -1,0 +1,27 @@
+@import "header";
+@import "back-to-top-button";
+@import "products-section";
+@import "about-section";
+@import "servicii-section";
+@import "about-food-section";
+@import "gallery";
+@import "footer";
+@import "desprenoi";
+@import "contact";
+@import "menu";
+
+* {
+    box-sizing: border-box;
+}
+html,body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    letter-spacing: 0.1em;
+}
+
+.main--btn {
+    margin-top: 10%;
+    width: 50%;
+    letter-spacing: 0.1em;
+}

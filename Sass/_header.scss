@@ -1,0 +1,47 @@
+$primary-blue : #2E548A;
+$primary-red : #FA6163;
+
+header {
+    background-color: #F6EDCB;
+
+    .navbar .navbar-brand,
+    .navbar-light .navbar-nav .nav-link,
+    .dropdown-item {
+        color: $primary-blue;
+    }
+    .navbar-light .navbar-nav .active > .nav-link {
+        color: $primary-red;
+    }
+    .navbar .nav-item:hover .dropdown-menu {
+        display: block;
+    }
+    .navbar-brand {
+        @media screen and(min-width: 996px) {
+            font-size: 2em;
+        }
+    }
+    nav {
+        @media screen and(min-width: 996px) {
+            font-size: 1.5em;
+        }
+    }
+}
+
+/*Header Section*/
+.header-section {
+    margin-top: 10%;
+    height: 50vh;
+    background-image: url('/Img/Headerfront-page.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+
+    &__content--btn:hover {
+        background-color: $primary-red;
+        border: 1px solid $primary-red;
+    }
+    @media screen and(min-width: 576px) {
+        margin-top: 0;
+    }
+}

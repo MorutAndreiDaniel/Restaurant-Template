@@ -1,0 +1,46 @@
+$primary-blue : #2E548A;
+$primary-red : #FA6163;
+
+.contact-title {
+    padding: 1.5em 0em;
+    font-weight: 600;
+    color: $primary-red;
+}
+.contact-page {
+    overflow-x: hidden;
+    @media screen and(min-width: 996px) {
+        margin-bottom: 3em; 
+    }
+}
+/*Form*/
+.contact-form{
+    display: flex;
+    justify-content: center;
+}
+form {
+    width: 80%;
+}
+label {
+    color: $primary-blue;
+}
+input[type=text]:hover, input[type=email]:hover, textarea:hover {
+    border: 2px solid $primary-red;
+}
+/*Address*/
+.contact-address {
+    padding: 2em 0em;
+    display: flex;
+    justify-content: center;
+    h3 {
+        color: $primary-red;
+        font-weight: 500;
+        font-size: 2.5em;
+    }
+    h5 {
+        color: $primary-blue;
+        opacity:0.8;
+        @media screen and(min-width: 768px) {
+            line-height: 1.5em;
+        }
+    }
+}

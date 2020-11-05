@@ -1,0 +1,30 @@
+$primary-blue : #2E548A;
+$primary-red : #FA6163;
+
+.footer-content {
+    
+    &__title {
+        p {
+            color: $primary-blue;
+        }
+    }
+
+    &__social-icons {
+        font-size: 2em;
+    }
+
+    &__menu {
+        display: none;
+        @media screen and(min-width: 768px) {
+            display: block;
+        }
+        .navbar-nav li {
+            @media screen and(min-width: 768px) {
+                padding: 0em 1em;
+            }
+        }
+        .navbar-nav .active > .nav-link  {
+            color: $primary-red;
+        }
+    }
+}
